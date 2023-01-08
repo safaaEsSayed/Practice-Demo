@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lab05.css">
+</head>
+<body>
+    <form id="formId" style="margin-left: 40px;  margin-top: 35px;">
+        <br>
+        <label for="fname">Name:</label>
+        <input type="text" id="name" name="name" value="" style="margin-left:20px;"><br>
+        <p id="nameWarning" style="display: none; color: red;"> - Name is required. </p>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" style="margin-left:20px;"><br>
+        <p id="mailWarning" style="display: none; color: red;"> - Email is not valid.</p>
+        <br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd">
+        <p id="passordWarning" style="display: none; color: red;"> - Password must be 8 chars at least. </p>
+        <br>
+        <br>
+        <label for="gender">Gender</label>
+        <br>
+          <input type="radio" id="male" name="yourGender" value="Male">
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="yourGender" value="Female">
+          <label for="female">Female</label>
+          <p id="genderWarning" style="display: none; color: red;"> - Please select your gender. </p>
+        <br>
+        <br>
+        <label for="sports">Sports</label>
+        <br>
+        <input type="checkbox" id="sport1" name="sport" value="Tennis">
+        <label for="sport1"> Tennis</label><br>
+        <input type="checkbox" id="sport2" name="sport" value="Running">
+        <label for="sport2">Running</label><br>
+        <input type="checkbox" id="sport3" name="sport" value="Football">
+        <label for="sport3"> Football</label>
+        <p id="sportWarning" style="display: none; color: red;"> - Please select at least two sports. </p>
+        <br>
+        <br>
+        <label for="country">Country</label>
+        <select name="countries" id="countries" style="width: 200px; margin-left: 10px;">
+        <option value="">Select</option>
+        <option value="Egypt">Egypt</option>
+        <option value="Palastine">Palastine</option>
+        <option value="USA">USA</option>
+        <option value="China">China</option>
+        </select>
+        <p id="countryWarning" style="display: none; color: red;"> - Please select your country. </p>
+        <br>
+        <br>
+        <input type="button" onclick="submitFormFun()" id="submitBtn" value="Submit" style="background-color: green; border: 0ch; width:100px; height:30px;">
+        <input type="button" onclick="setFormFun()" value="Reset" style="background-color: orange; border: 0ch; width:100px; height:30px;">
+      </form>
+      <br>
+      <br>
+      <br>
+      <br>
+      <input type="text" id="inputTxt" value= "" onkeydown="key(event)">
+      <p id="warningKey" style="display: block; color: red;"> - Enter key </p>
+    <script src="/lab05.js"></script>
+</body>
+</html>

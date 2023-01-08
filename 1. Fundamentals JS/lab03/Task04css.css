@@ -1,0 +1,55 @@
+.js_style
+{
+  background-color: antiquewhite;
+  color: #333;
+}
+
+.container1 , .container2 , .container3
+{
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  margin: 50px auto;
+  width: 700px;
+}
+.container1  .text
+{
+  background-color:aliceblue;
+  color: #333;
+  border-radius: 10px;
+  width: auto;
+  height: 30px;
+  padding: 10px;
+  display: block;
+}
+
+.container2 input
+{
+  background-color: aliceblue;
+  height: 10px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.container2 a
+{
+  text-decoration: none;
+  color: rgb(247, 112, 217);
+  padding: 10px;
+  font-size: 30px;
+}
+
+.container3 button
+{
+  background-color: aliceblue;
+  height: 35px;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 15px;
+}
